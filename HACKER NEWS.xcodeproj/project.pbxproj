@@ -14,6 +14,7 @@
 		5CC055A7266D0D070006746C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC055A6266D0D070006746C /* NetworkManager.swift */; };
 		5CC055AA266D135E0006746C /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC055A9266D135E0006746C /* PostData.swift */; };
 		5CC055B2266D240E0006746C /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC055B1266D240E0006746C /* DetailsView.swift */; };
+		5CF2F457267112CD00C2016B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2F456267112CD00C2016B /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		5CC055A6266D0D070006746C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5CC055A9266D135E0006746C /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		5CC055B1266D240E0006746C /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		5CF2F456267112CD00C2016B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		5CF2F459267113DB00C2016B /* HACKER NEWS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HACKER NEWS.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		5CC05594266D08710006746C /* HACKER NEWS */ = {
 			isa = PBXGroup;
 			children = (
+				5CF2F459267113DB00C2016B /* HACKER NEWS.entitlements */,
 				5CC055AC266D23C50006746C /* View */,
 				5CC055A5266D0CD00006746C /* Models */,
 				5CC05595266D08710006746C /* HACKER_NEWSApp.swift */,
@@ -90,6 +94,7 @@
 			children = (
 				5CC05597266D08710006746C /* ContentView.swift */,
 				5CC055B1266D240E0006746C /* DetailsView.swift */,
+				5CF2F456267112CD00C2016B /* WebView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 				5CC055A7266D0D070006746C /* NetworkManager.swift in Sources */,
 				5CC055B2266D240E0006746C /* DetailsView.swift in Sources */,
 				5CC055AA266D135E0006746C /* PostData.swift in Sources */,
+				5CF2F457267112CD00C2016B /* WebView.swift in Sources */,
 				5CC05598266D08710006746C /* ContentView.swift in Sources */,
 				5CC05596266D08710006746C /* HACKER_NEWSApp.swift in Sources */,
 			);
@@ -295,8 +301,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HACKER NEWS/HACKER NEWS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HACKER NEWS/Preview Content\"";
+				DEVELOPMENT_TEAM = TN4AL9CPNZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "HACKER NEWS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -306,6 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.HACKER-NEWS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -316,8 +325,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HACKER NEWS/HACKER NEWS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HACKER NEWS/Preview Content\"";
+				DEVELOPMENT_TEAM = TN4AL9CPNZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "HACKER NEWS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -327,6 +338,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.HACKER-NEWS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
